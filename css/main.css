@@ -103,8 +103,7 @@ textarea {
 body {
     margin: 0;
     padding: 0;
-    background: url('bg-sia.jpg') no-repeat fixed;
-    background-size: cover; 
+    background: #fff; 
 }
 
 h1 {
@@ -136,12 +135,14 @@ color: inherit;
 }
 
 header {
+    position: fixed;
     width: 100%;
-    height:117px;
+    height:140px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    background: #fff
+    background: #fff;
+    z-index: 1000;
 }
 
 div#contact-bar {
@@ -168,6 +169,7 @@ li.contact-bar-item {
 
 li.contact-bar-item a {
     color: rgb(150, 150, 150);
+    text-decoration: none;
 }
 
 li.fb {
@@ -186,7 +188,8 @@ li.mail {
 }
 
 div.logo {
-    width: 50%;
+    width: 47.5%;
+    margin-left:2.5%;
     padding: 16px;
     transition: all .1s;    
 }
@@ -198,15 +201,16 @@ div.logo {
 
 div.logo img {
     width: 100%;
-    max-width: 280px;
+    max-width: 400px;
 }
 
 nav {
-    width:50%;
-    margin: 27px 0 0;
+    width:47.5%;
+    height: 40px;
+    margin: 38px 2.5% 0 0;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-end;
     z-index: 10;
     background: #fff;
 }
@@ -219,31 +223,18 @@ label {
     display: none;
 }
 
-div#menu-wrapper {
-    opacity: 1;
-    width: 70%;
-}
-
-ul.menu {
-    font-size: 1.3em;
-    line-height: 50px;
-    list-style: none;
-    text-align: right;
-    transition: all .1s;
-}
-
-.menu-fixed {
-    line-height: 15px !important;
-}
-
-li.link {
+button.link {
     display: inline;
-    padding: 3px 2%;
+    padding: 3px 25px;
     color: #006633;
+    background: #fff;
+    border: none;
+    font-size: 1.3em;
 }
 
 div#content {
     position: relative;
+    top:140px;
     width: 100%;
     margin: 0;
     padding: 0;
@@ -321,6 +312,7 @@ iframe#sia-video {
 }
 
 div#main-content {
+    position: relative;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
