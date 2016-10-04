@@ -146,6 +146,7 @@ header {
 }
 
 div#contact-bar {
+    display: block;
     width: 100%;
     background: white;
     z-index: 11;
@@ -192,11 +193,6 @@ div.logo {
     margin-left:2.5%;
     padding: 16px;
     transition: all .1s;    
-}
-
-.logo-fixed {
-    width: 200px !important;
-    padding: 10px !important;
 }
 
 div.logo img {
@@ -486,7 +482,33 @@ div#address {
     /* Style adjustments for high resolution devices */
 }
 
-@media only screen and (max-width: 850px) {
+/* Styles Big Screen*/
+@media only screen and (min-width: 1600px) {
+
+}
+
+/* Styles Medium Screen*/
+@media only screen and (max-width: 1024px) {
+    header {
+        height:80px;
+    }   
+    div#contact-bar {
+        display: none;
+    }
+    div.logo {
+        width: 32.5%;
+    }
+    nav {
+        width: 62.5%;
+        margin: 22px 2.5% 0 0;
+    }
+    div#content {
+        top: 80px;
+    }
+}
+
+/* Styles Small Screen*/
+@media only screen and (max-width: 756px) {
     input[type=checkbox] {
     display: block;
     position: absolute;
@@ -502,22 +524,22 @@ div#address {
     display: block;
     margin: 0;
     cursor: pointer;
-    color: #fff;
+    color: #006633;
     font-size: 200%;
     z-index: 1000;
     }
 
-    div#menu-wrapper {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 200px;
-    background: #006633;
-    opacity: 0;
+    div.logo {
+        flex-grow: 2;
+    }
+
+    nav {
+        opacity: 0;
+        flex-direction: column;
     }
 
     /* Toggled State */
-    input[type=checkbox]:checked ~ div#menu-wrapper {
+    input[type=checkbox]:checked ~ nav {
     opacity: 1;
     }
 }
