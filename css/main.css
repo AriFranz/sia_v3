@@ -128,37 +128,30 @@ p {
 }
 
 a {
-
+color: inherit;
 }
 
 a:hover {
-
-}
-
-div#wrapper {
-    width: 100%;
-    min-width: 320px;
-    margin: 0 auto;
-    padding: 0 10% 0;
-    background: rgba(250,250,250,0.9);
+color: inherit;
 }
 
 header {
     width: 100%;
     height:117px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background: #fff
 }
 
 div#contact-bar {
-    position: fixed;
-    top: 0;
-    left: 0;
     width: 100%;
     background: white;
     z-index: 11;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
 }
 ul.contact-bar-list {
-    width: 80%;
+    width: 95%;
     margin: 0 auto;
     padding: 0 25px;
     list-style: none;
@@ -192,18 +185,8 @@ li.mail {
     padding-left: 25px;
 }
 
-nav {
-    position: fixed;
-    margin: 27px 0 0;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    z-index: 10;
-    background: #006633;
-}
-
 div.logo {
-    width: 280px;
+    width: 50%;
     padding: 16px;
     transition: all .1s;    
 }
@@ -216,6 +199,16 @@ div.logo {
 div.logo img {
     width: 100%;
     max-width: 280px;
+}
+
+nav {
+    width:50%;
+    margin: 27px 0 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    z-index: 10;
+    background: #fff;
 }
 
 input[type=checkbox] {
@@ -246,7 +239,7 @@ ul.menu {
 li.link {
     display: inline;
     padding: 3px 2%;
-    color: #fff;
+    color: #006633;
 }
 
 div#content {
@@ -501,7 +494,7 @@ div#address {
     /* Style adjustments for high resolution devices */
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 850px) {
     input[type=checkbox] {
     display: block;
     position: absolute;

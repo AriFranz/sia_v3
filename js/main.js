@@ -1,22 +1,22 @@
 jQuery(document).ready(function ($) {
 
     var headerWidth =$('header').width();
-    $('nav').css('width' , headerWidth);
+    /*$('nav').css('width', headerWidth);
 
-    $( window ).resize(function() { 
+    $(window).resize(function () {
         headerWidth = $('header').width();
-        $('nav').css('width' , headerWidth);
+        $('nav').css('width', headerWidth);
     });
 
     $(window).scroll(function (e) {
-	     if ($(this).scrollTop() > 67) {
+        if ($(this).scrollTop() > 67) {
             $('.logo').addClass('logo-fixed');
             $('.menu').addClass('menu-fixed');
-         } else {
+        } else {
             $('.logo').removeClass('logo-fixed');
             $('.menu').removeClass('menu-fixed');
-         }
-    });
+        }
+    });*/
     
 
     var $frame = $('iframe#sia-video');
