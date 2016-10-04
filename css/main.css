@@ -143,6 +143,7 @@ header {
     flex-wrap: wrap;
     background: #fff;
     z-index: 1000;
+    transition: all 0.3s ease;
 }
 
 div#contact-header {
@@ -203,12 +204,11 @@ div#logo_header img {
 nav#menu_header {
     width:47.5%;
     height: 40px;
-    margin: 38px 2.5% 0 0;
+    margin: 25px 2.5% 0 0;
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
     z-index: 10;
-    background: #fff;
 }
 
 input[type=checkbox]#toggle-menu_header {

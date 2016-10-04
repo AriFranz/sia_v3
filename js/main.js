@@ -7,14 +7,12 @@ jQuery(document).ready(function ($) {
         headerWidth = $('header').width();
         $('nav').css('width', headerWidth);
     });
-
-    $(window).scroll(function (e) {
+*/
+    /*$(window).scroll(function (e) {
         if ($(this).scrollTop() > 67) {
-            $('.logo').addClass('logo-fixed');
-            $('.menu').addClass('menu-fixed');
+            $('header').css('height', '80px');
         } else {
-            $('.logo').removeClass('logo-fixed');
-            $('.menu').removeClass('menu-fixed');
+            $('header').css('height', '140px');
         }
     });*/
     
