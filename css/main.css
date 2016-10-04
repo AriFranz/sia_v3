@@ -145,14 +145,14 @@ header {
     z-index: 1000;
 }
 
-div#contact-bar {
+div#contact-header {
     display: block;
     width: 100%;
     background: white;
     z-index: 11;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
 }
-ul.contact-bar-list {
+ul.contact-list-header {
     width: 95%;
     margin: 0 auto;
     padding: 0 25px;
@@ -161,46 +161,46 @@ ul.contact-bar-list {
     color: rgb(150, 150, 150);
 }
 
-li.contact-bar-item {
+li.contact-item-header {
     display: inline;
     line-height: 28px;
     padding: 0 25px;
     background-size: 12px !important;
 }
 
-li.contact-bar-item a {
+li.contact-item-header a {
     color: rgb(150, 150, 150);
     text-decoration: none;
 }
 
-li.fb {
+li.fb-header {
     background: url('fb.png') center left no-repeat;
     padding-left: 25px;
 }
 
-li.phone {
+li.phone-header {
     background: url('phone.png') center left no-repeat;
     padding-left: 25px;
 }
 
-li.mail {
+li.mail-header {
     background: url('mail.png') center left no-repeat;
     padding-left: 25px;
 }
 
-div.logo {
+div#logo_header {
     width: 47.5%;
     margin-left:2.5%;
     padding: 16px;
     transition: all .1s;    
 }
 
-div.logo img {
+div#logo_header img {
     width: 100%;
     max-width: 400px;
 }
 
-nav {
+nav#menu_header {
     width:47.5%;
     height: 40px;
     margin: 38px 2.5% 0 0;
@@ -211,7 +211,7 @@ nav {
     background: #fff;
 }
 
-input[type=checkbox] {
+input[type=checkbox]#toggle-menu_header {
     display: none;
 }
 
@@ -219,7 +219,7 @@ label {
     display: none;
 }
 
-button.link {
+button.menu-link-header {
     display: inline;
     padding: 3px 25px;
     color: #006633;
@@ -236,7 +236,7 @@ div#content {
     padding: 0;
 }
 
-div#hero-banner {
+div#banner_content {
     position: relative;
     display: block;
     width: 100%;
@@ -248,14 +248,14 @@ div#hero-banner {
     background-size: cover;
 }
 
-div#hero-banner h2 {
+div#banner_content h2 {
     line-height: 200px;
     font-size: 3.5em;
     font-weight: 400;
     color: #fff;
 }
 
-div#play-video {
+/*div#play-video {
     position: relative;
     display: block;
     width: 20%;
@@ -306,8 +306,8 @@ div#video-pop-out {
 iframe#sia-video {
     box-shadow: 0 5px 7px rgba(0, 0, 0, 0.8)
 }
-
-div#main-content {
+*/
+div#main_content {
     position: relative;
     display: flex;
     flex-direction: row;
@@ -316,7 +316,7 @@ div#main-content {
     background: white;
 }
 
-div.main-content-item {
+div.main-item-content {
     width: 48%;
     margin: 25px 0;
     padding: 16px;
@@ -333,18 +333,18 @@ footer {
     background: #fff;
 }
 
-div#contact-us {
+div#contact-us_footer {
     width: 100%;
     padding: 25px;
     background: #fff;
 }
 
-div#contact-us input {
+div#contact-us_footer input {
     display: block;
 }
 
-div#contact-us input[type="text"],
-div#contact-us textarea {
+div#contact-us_footer input[type="text"],
+div#contact-us_footer textarea {
     width:60%;
     margin: 16px auto;
     padding: .3em;
@@ -353,7 +353,7 @@ div#contact-us textarea {
     border-radius: 3px;
 }
 
-div#contact-us input[type="submit"] {
+div#contact-us_footer input[type="submit"] {
     width:20%;
     min-width: 250px;
     margin: 10px auto;
@@ -365,11 +365,11 @@ div#contact-us input[type="submit"] {
     transition: background 0.3s ease;
 }
 
-div#contact-us input[type="submit"]:hover {
+div#contact-us_footer input[type="submit"]:hover {
     background: #009933;
 }
 
-div#address {
+div#address_footer {
     position: relative;
     display: block;
     width: 100%;
@@ -492,13 +492,13 @@ div#address {
     header {
         height:80px;
     }   
-    div#contact-bar {
+    div#contact-header {
         display: none;
     }
-    div.logo {
+    div#logo_header {
         width: 32.5%;
     }
-    nav {
+    nav#menu_header {
         width: 62.5%;
         margin: 22px 2.5% 0 0;
     }
@@ -509,7 +509,7 @@ div#address {
 
 /* Styles Small Screen*/
 @media only screen and (max-width: 756px) {
-    input[type=checkbox] {
+    input[type=checkbox]#toggle-menu_header {
     display: block;
     position: absolute;
     top: 0;
@@ -529,17 +529,17 @@ div#address {
     z-index: 1000;
     }
 
-    div.logo {
+    div#logo_header {
         flex-grow: 2;
     }
 
-    nav {
+    nav#menu_header {
         opacity: 0;
         flex-direction: column;
     }
 
     /* Toggled State */
-    input[type=checkbox]:checked ~ nav {
+    input[type=checkbox]:checked ~ nav#menu_header {
     opacity: 1;
     }
 }

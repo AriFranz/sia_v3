@@ -20,35 +20,35 @@
 
         <!-- Add your site or application content here -->
         <header>
-            <div id="contact-bar">
-                <ul class="contact-bar-list">
-                    <li class="contact-bar-item fb"><a href="https://facebook.com/siaalemana/" target="_blank" alt="Facebook">siaalemana</a></li>
-                    <li class="contact-bar-item phone">+595 493 240 381</li>
-                    <li class="contact-bar-item mail"><a href="mailto:casa_central@sia-alemana.com" target="_blank" alt="Mail">casa_central@sia-alemana.com</a></li>
+            <div id="contact-header">
+                <ul class="contact-list-header">
+                    <li class="contact-item-header fb-header"><a href="https://facebook.com/siaalemana/" target="_blank" alt="Facebook">siaalemana</a></li>
+                    <li class="contact-item-header phone-header">+595 493 240 381</li>
+                    <li class="contact-item-header mail-header"><a href="mailto:casa_central@sia-alemana.com" target="_blank" alt="Mail">casa_central@sia-alemana.com</a></li>
                 </ul>
             </div>
-            <div class="logo"><a href="index.html" alt="inicio"><img src="img/sia-logo.svg" alt="Logo" /></a></div>
-            <label for="toggle-menu">&#9776</label>
-            <input type="checkbox" id="toggle-menu">           
-            <nav>
-                <button class="link home">Inicio</button>
-                <button class="link services">Servicios</button>
-                <button class="link about">Nosotros</button>
-                <button class="link proyectos">Proyectos</button>
+            <div id="logo_header"><a href="index.html" alt="inicio"><img src="img/sia-logo.svg" alt="Logo" /></a></div>
+            <label for="toggle-menu_header">&#9776</label>
+            <input type="checkbox" id="toggle-menu_header">           
+            <nav id="menu_header">
+                <button class="menu-link-header home-header">Inicio</button>
+                <button class="menu-link-header services-header">Servicios</button>
+                <button class="menu-link-header about-header">Nosotros</button>
+                <button class="menu-link-header proyectos-header">Proyectos</button>
             </nav>
         </header>
         <div id="content">
-            <div id="hero-banner">
+            <div id="banner_content">
                 <h2 class="center">Unidos por un mejor servicio</h2>
-                <div id="play-video">Ver video</div>
+                <!--<div id="play-video">Ver video</div>
                 <div id="video-pop-out" class="hide">
                     <div class="close">x</div>
                     <iframe id="sia-video" src="https://player.vimeo.com/video/162533117?autoplay=0&title=0&byline=0&portrait=0" width="720" height="405" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-                </div>
+                </div>-->
             </div>
-            <div id="main-content">
+            <div id="main_content">
                 <h2 class="main-title center">SIA Alemana S.R.L. - Nuestros Servicios</h2>
-                <div class="main-content-item">
+                <div class="main-item-content">
                     <h2 class="center">Carpinteria</h2>
                     <p>
                         Fabricamos casas, corrales y otras instalaciones requeridas por los productores de la zona, además de una amplia gama de maderas aserradas de todo el país y a precios competitivos.
@@ -56,19 +56,19 @@ En el afán de utilizar recursos naturales locales, es decir maderas chaqueñas,
 Para completar nuestra gama de productos aun más, también fabricamos muebles e instalaciones interiores para que Ud. se sienta más cómodo en su casa o establecimiento.
                     </p>
                 </div>
-                <div class="main-content-item">
+                <div class="main-item-content">
                     <h2 class="center">Maquinarias</h2>
                     <p>
                         Integramos en nuestra gama de servicio un parque maquinaria bastante completo, que está a disposición de los productores de la zona, realizando trabajos de implantación de pasturas nuevas, mantenimiento y mejoramiento de pasturas viejas y también excavamos tajamares con tanques australianos. Nos especializamos en la instalación de cañería para sistemas de bebederos en las fincas del ganadero, utilizando tecnologías probadas y muy eficientes. Nuestro interés es ofrecer soluciones rápidas y rentables para productores pequeños y grandes, manteniendo una estrecha relación entre trabajo de campo y de asesoramiento al dueño, para lograr resultados satisfactorios a largo plazo para quienes confían en nosotros.
                     </p>
                 </div>
-                <div class="main-content-item">
+                <div class="main-item-content">
                     <h2 class="center">Metalúrgica</h2>
                     <p>
                         Ofrecemos soluciones integrales para el productor en área de la agricultura y ganadería del Chaco Central, reparando maquinas existentes y fabricando nuevos equipos. Nuestra especialidad más bien se concentra en soluciones para el mantenimiento de pasturas, combatiendo malezas y mejorando suelos con implementos especiales. Una de las ventajas de ser cliente de SIA Alemana S.R.L. es que Ud. obtiene asesoramiento incluido sobre el manejo de pasturas de parte de nuestro personal experimentado. También ofrecemos un servicio de tornaría especializada para una amplia gama de necesidades de los productores y talleres mecánicos de la zona.    
                     </p>
                 </div>
-                <div class="main-content-item">
+                <div class="main-item-content">
                     <h2 class="center">Construccion</h2>
                     <p>
                         Los primeros pasos de esta rama de servicios se dieron dentro de lo que es la carpintería, pero ganando más y más importancia, la construcción de casas, tinglados, corrales y otras instalaciones para su estancia o establecimiento se estableció como rama independiente de la amplia gama de servicios de SIA Alemana S.R.L.<br />
@@ -78,7 +78,7 @@ Contamos con personal capacitado, que por sus años de experiencia le fabrican l
             </div>
         </div>
         <footer>
-            <div id="contact-us" class="center">
+            <div id="contact-us_footer" class="center">
                 <form>
                     <h2 class="main-title">Contactenos</h2>
                     <input type="text" name="Mail Adress" title="Direccion de correo" onfocus="if(this.value=='nombre@ejemplo.com') this.value='';" onblur="if(this.value=='') this.value='nombre@ejemplo.com';" value="nombre@ejemplo.com">
@@ -87,7 +87,7 @@ Contamos con personal capacitado, que por sus años de experiencia le fabrican l
                     <input type="submit" name="Enviar" value="Enviar">
                 </form>
             </div>
-            <div id="address">
+            <div id="address_footer">
                 <h2 class="main-title center">Donde nos puedes encontrar</h2>
                 <iframe class="googlemap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3682.1169509030606!2d-60.13004598452523!3d-22.649427785143374!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x946df5da8d8c839d%3A0x3b23b57f8bc272d9!2sSIA+Alemana+S.R.L.!5e0!3m2!1sde!2sde!4v1473707896688" width="100%" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
             </div>
