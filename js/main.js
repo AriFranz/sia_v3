@@ -58,4 +58,16 @@ jQuery(document).ready(function ($) {
     }
 });
 
+var bigLogo = "img/sia-logo.svg";
+var smallLogo = "img/sia-logo-s.svg";
+
+var mq = window.matchMedia("(min-width: 1025px)");
+
+if (mq.matches) {
+    var logoImage = bigLogo;
+} else {
+    var logoImage = smallLogo;
+}
+
+$("a.logo-img-header").html("<img alt=\"Logo\" src=\"" + logoImage + "\" />");
 });
