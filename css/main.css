@@ -224,7 +224,7 @@ button.menu-link-header {
     display: inline;
     padding: 3px 25px;
     color: #006633;
-    background: #fff;
+    background: none;
     border: none;
     font-size: 1.3em;
 }

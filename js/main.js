@@ -56,18 +56,23 @@ jQuery(document).ready(function ($) {
         $frame.attr('src','');  
         $frame.attr('src', vidsrc);
     }
-});
+    });
 
-var bigLogo = "img/sia-logo.svg";
-var smallLogo = "img/sia-logo-s.svg";
+    var bigLogo = "img/sia-logo.svg";
+    var smallLogo = "img/sia-logo-s.svg";
 
-var mq = window.matchMedia("(min-width: 1025px)");
+    var mq = window.matchMedia("(min-width: 757px)");
 
-if (mq.matches) {
-    var logoImage = bigLogo;
-} else {
-    var logoImage = smallLogo;
-}
+    if (mq.matches) {
+        var logoImage = bigLogo;
+        changeLogo();
+    } else {
+        var logoImage = smallLogo;
+        changeLogo();
+    }
 
-$("a.logo-img-header").html("<img alt=\"Logo\" src=\"" + logoImage + "\" />");
+    function changeLogo() {
+    $("a.logo-img-header").html("<img alt=\"Logo\" src=\"" + logoImage + "\" />");
+    }
+    
 });
