@@ -63,16 +63,18 @@ jQuery(document).ready(function ($) {
 
     var mq = window.matchMedia("(min-width: 757px)");
 
-    if (mq.matches) {
-        var logoImage = bigLogo;
-        changeLogo();
-    } else {
-        var logoImage = smallLogo;
-        changeLogo();
-    }
+    screenChange();
 
-    function changeLogo() {
-    $("a.logo-img-header").html("<img alt=\"Logo\" src=\"" + logoImage + "\" />");
+    $(window).resize(screenChange);
+
+    function screenChange() {
+        if ($("header").css("height") == "60px" ) {
+            var logoImage = smallLogo;
+            $("a.logo-img-header").html("<img alt=\"Logo\" src=\"" + logoImage + "\" />");
+        } else {
+            var logoImage = bigLogo;
+            $("a.logo-img-header").html("<img alt=\"Logo\" src=\"" + logoImage + "\" />");
+        }
     }
     
 });

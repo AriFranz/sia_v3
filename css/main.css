@@ -458,6 +458,13 @@ div#address_footer {
     div#content {
         top:80px;
     }
+    div#banner_content {
+        height: 300px;
+    }
+    div#banner_content h2 {
+        font-size: 2.5em;
+        line-height: 120px;
+    }
     div.main-item-content {
     width: 98%;
     }
@@ -468,27 +475,30 @@ div#address_footer {
 
 /* Styles Small Screen*/
 @media only screen and (max-width: 756px) {
+    html {
+        font-size: 12px;
+    }
     header {
         height: 60px;
     }
     input[type=checkbox]#toggle-menu_header {
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    opacity: 0;
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0;
     }
 
     label {  
-    position: absolute;
-    top: 25px;
-    right: 25px;
-    display: block;
-    margin: 0;
-    cursor: pointer;
-    color: #006633;
-    font-size: 150%;
-    z-index: 1000;
+        position: absolute;
+        top: 25px;
+        right: 25px;
+        display: block;
+        margin: 0;
+        cursor: pointer;
+        color: #006633;
+        font-size: 150%;
+        z-index: 1000;
     }
 
     div#logo_header {
@@ -510,12 +520,19 @@ div#address_footer {
 
     /* Toggled State */
     input[type=checkbox]:checked ~ nav#menu_header {
-    opacity: 1;
+        opacity: 1;
     }
 
     div#logo_header img {
         width: 150%;
         max-width: 150px;
+    }
+    div#banner_content {
+        height: 200px;
+    }
+    div#banner_content h2 {
+        font-size: 2em;
+        line-height: 80px;
     }
 }
 
