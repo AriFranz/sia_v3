@@ -8,13 +8,13 @@ jQuery(document).ready(function ($) {
         $('nav').css('width', headerWidth);
     });
 */
-    /*$(window).scroll(function (e) {
+    $(window).scroll(function (e) {
         if ($(this).scrollTop() > 67) {
             $('header').css('height', '80px');
         } else {
             $('header').css('height', '140px');
         }
-    });*/
+    });
     
 
     var $frame = $('iframe#sia-video');

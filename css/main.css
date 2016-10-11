@@ -220,13 +220,14 @@ label {
     display: none;
 }
 
-button.menu-link-header {
+a.menu-link-header {
     display: inline;
     padding: 3px 25px;
     color: #006633;
     background: none;
     border: none;
     font-size: 1.3em;
+    text-decoration: none;
 }
 
 div#content {
