@@ -10,9 +10,11 @@ jQuery(document).ready(function ($) {
 */
     $(window).scroll(function (e) {
         if ($(this).scrollTop() > 67) {
-            $('header').css('height', '80px');
+            $('header').animate({
+                height: "100px"    
+            }, 400);
         } else {
-            $('header').css('height', '140px');
+            $('header').css('height', '');
         }
     });
     
