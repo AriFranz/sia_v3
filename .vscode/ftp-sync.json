@@ -4,7 +4,7 @@
     "username": "user",
     "password": "user",
     "port": 21,
-    "protocol": "sftp",
+    "protocol": "ftp",
     "uploadOnSave": false,
     "passive": false,
     "debug": false,

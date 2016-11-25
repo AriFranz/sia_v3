@@ -13,8 +13,8 @@
 
 html {
     color: #222;
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 18px;
+    line-height: 24px;
     font-family: 'PT Sans', sans-serif;
 }
 
@@ -108,16 +108,18 @@ body {
 
 h1 {
     font-size: 2em;
+    margin: .2em 0;
+}
+
+h1.main-title {
+    line-height: 1.4em;
+    width: 100%;
 }
 
 h2 {
     font-size: 1.75em;
     color: #006633;
-}
-
-h2.main-title {
-    font-size: 2em;
-    width: 100%;
+    margin: .2em 0;
 }
 
 p {
@@ -246,7 +248,7 @@ div#hero-banner {
     padding: 0;
     top:100px;
     overflow: hidden;
-    background:url('bg-video.jpg') center no-repeat;
+    background: #fff url('bg-video.jpg') center no-repeat;
     background-size: cover;
 }
 
@@ -272,8 +274,6 @@ div.main-item-content {
     width: 48%;
     margin: 25px 0;
     padding: 16px;
-    border: solid 1px lightgrey;
-    border-radius: 3px;
 }
 
 footer {
@@ -465,7 +465,10 @@ div#link-block_footer {
 @media only screen and (max-width: 1024px) {
     header {
         height:80px;
-    }   
+    } 
+    a.menu-link-header {
+    font-size: 1em;
+    }  
     div#contact-header {
         display: none;
     }
@@ -480,6 +483,7 @@ div#link-block_footer {
         top:80px;
     }
     div#hero-banner {
+        top: 80px;
         height: 300px;
     }
     div.main-item-content {
@@ -491,10 +495,7 @@ div#link-block_footer {
 }
 
 /* Styles Small Screen*/
-@media only screen and (max-width: 756px) {
-    html {
-        font-size: 12px;
-    }
+@media only screen and (max-width: 768px) {
     header {
         height: 60px;
     }
@@ -508,13 +509,13 @@ div#link-block_footer {
 
     label {  
         position: absolute;
-        top: 25px;
+        top: 20px;
         right: 25px;
         display: block;
         margin: 0;
         cursor: pointer;
         color: #006633;
-        font-size: 150%;
+        font-size: 125%;
         z-index: 1000;
     }
 
@@ -533,6 +534,12 @@ div#link-block_footer {
         padding: 80px 10px;
         background: #fff;
         opacity: 0;
+    }
+    div#content {
+        top:60px;
+    }
+    div#hero-banner {
+        top: 60px;
     }
 
     /* Toggled State */
