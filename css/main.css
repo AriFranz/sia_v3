@@ -138,21 +138,29 @@ color: inherit;
 header {
     position: fixed;
     width: 100%;
-    height:140px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    height:100px;
+    display: block;
     background: #fff;
     z-index: 1000;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
 }
 
+div#container_header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+    border: none;
+}
+
 div#contact-header {
     display: block;
-    width: 100%;
+    width: 40%;
     background: white;
     z-index: 11;
-    border-bottom:1px solid #006633;
 }
 ul.contact-list-header {
     width: 95%;
@@ -192,20 +200,19 @@ li.mail-header {
 
 div#logo_header {
     display: block;
-    width: 47.5%;
-    margin-left:2.5%;
+    width: 32%;
+    max-width: 375px;
+    margin:0;
     padding: 16px;  
 }
 
 div#logo_header img {
     width: 100%;
-    max-width: 400px;
 }
 
 nav#menu_header {
-    width:47.5%;
-    height: 40px;
-    margin: 25px 2.5% 0 0;
+    width:66%;
+    margin: 32px 0;
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
@@ -230,33 +237,26 @@ a.menu-link-header {
     text-decoration: none;
 }
 
-div#content {
-    position: relative;
-    display: block;
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    top:140px;
-    padding: 0;
-}
-
-div#banner_content {
+div#hero-banner {
     position: relative;
     display: block;
     width: 100%;
     height: 500px;
     margin: 0;
     padding: 0;
+    top:100px;
     overflow: hidden;
     background:url('bg-video.jpg') center no-repeat;
     background-size: cover;
 }
 
-div#banner_content h2 {
-    line-height: 200px;
-    font-size: 3.5em;
-    font-weight: 400;
-    color: #fff;
+div#content {
+    position: relative;
+    display: block;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0;
 }
 
 div#main_content {
@@ -279,11 +279,10 @@ div.main-item-content {
 footer {
     position: relative;
     display: block;
-    top:140px;
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 0 1  0px;
+    padding: 0 0 10px;
     background: #006633;
 }
 
@@ -324,6 +323,9 @@ div#contact-us_footer input[type="submit"] {
 
 div#contact-us_footer input[type="submit"]:hover {
     background: #ccc;
+}
+iframe.googlemap {
+    margin: 0 5%;
 }
 
 div#address_footer {
@@ -477,12 +479,8 @@ div#link-block_footer {
     div#content {
         top:80px;
     }
-    div#banner_content {
+    div#hero-banner {
         height: 300px;
-    }
-    div#banner_content h2 {
-        font-size: 2.5em;
-        line-height: 120px;
     }
     div.main-item-content {
     width: 98%;
@@ -546,12 +544,8 @@ div#link-block_footer {
         width: 150%;
         max-width: 150px;
     }
-    div#banner_content {
+    div#hero-banner {
         height: 200px;
-    }
-    div#banner_content h2 {
-        font-size: 2em;
-        line-height: 80px;
     }
 }
 

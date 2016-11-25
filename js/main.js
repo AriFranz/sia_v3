@@ -7,16 +7,16 @@ jQuery(document).ready(function ($) {
         headerWidth = $('header').width();
         $('nav').css('width', headerWidth);
     });
-*/
-    $(window).scroll(function (e) {
-        if ($(this).scrollTop() > 67) {
-            $('header').animate({
-                height: "100px"    
-            }, 400);
-        } else {
-            $('header').css('height', '');
-        }
-    });
+// */
+//     $(window).scroll(function (e) {
+//         if ($(this).scrollTop() > 67) {
+//             $('header').animate({
+//                 height: "100px"    
+//             }, 400);
+//         } else {
+//             $('header').css('height', '');
+//         }
+//     });
     
 
     var $frame = $('iframe#sia-video');

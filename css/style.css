@@ -1,0 +1,152 @@
+/*! HTML5 Boilerplate v5.3.0 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+@import 'https://fonts.googleapis.com/css?family=PT+Sans';
+
+html {
+    color: #222;
+    font-size: 16px;
+    line-height: 20px;
+    font-family: 'PT Sans', sans-serif;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 25vh 0 0;
+    width: 100vw;
+    height: 100vh;
+    background: #fff url('bg-video.jpg') center no-repeat;
+    background-size: cover;; 
+}
+h2 {
+    font-size: 140%;
+    color: #006633;
+    line-height: 150%;
+}
+h2 a {
+    color: inherit;
+}
+div#container {
+    position: relative;
+    margin: auto;
+    padding: 40px;
+    width: 100%;
+    max-width: 1024px;
+    text-align: center;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: rgba(0,0,0,0.5);
+}
+div.row {
+    padding: 20px;
+}
+div.row.inline a, div.row.inline p {
+    display: inline;
+    padding: 16px;
+    margin: 0;
+    font-size: 90%;
+    word-spacing: .05em;
+    line-height: 1.8em;
+    color: #777;
+}
+@media only screen and (max-width: 1024px) {
+    div#container {
+        border-radius: 0;
+    }
+}
+@media only screen and (max-width: 768px) {
+    div.row.inline a, div.row.inline p {
+        display: block;
+        padding: 5px;
+    }
+}
