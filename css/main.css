@@ -107,13 +107,15 @@ body {
 }
 
 h1 {
-    font-size: 2em;
-    margin: .2em 0;
+    font-size: 3em;
+    color: #fff;
 }
 
 h1.main-title {
-    line-height: 1.4em;
+    line-height: 4em;
     width: 100%;
+    margin: .2em auto;
+    text-shadow: 2px 2px 5px #000;
 }
 
 h2 {
@@ -252,17 +254,19 @@ div#hero-banner {
     background-size: cover;
 }
 
-div#content {
+div.content {
     position: relative;
+    min-height: 100vh;
     display: block;
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0;
+    padding: 1em 0 0;
 }
 
-div#main_content {
+div.main_content {
     position: relative;
+    top:100px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -278,6 +282,8 @@ div.main-item-content {
 
 footer {
     position: relative;
+    top:100px;
+    bottom: 0;
     display: block;
     width: 100%;
     max-width: 1200px;
@@ -338,7 +344,7 @@ div#address_footer {
 
 div#link-block_footer {
     width: 100%;
-    margin: 20px 0;
+    margin:0;
     height: 50px;
     text-align: center;
 }
@@ -479,7 +485,7 @@ div#link-block_footer {
         width: 62.5%;
         margin: 22px 2.5% 0 0;
     }
-    div#content {
+    div.main_content {
         top:80px;
     }
     div#hero-banner {
@@ -488,6 +494,10 @@ div#link-block_footer {
     }
     div.main-item-content {
     width: 98%;
+    margin: 0;
+    }
+    div.main-item-content:first-of-type {
+    margin-top: 0;
     }
     footer {
         top:80px;
@@ -496,6 +506,12 @@ div#link-block_footer {
 
 /* Styles Small Screen*/
 @media only screen and (max-width: 768px) {
+    h1 {
+        font-size: 1.7em;
+    }
+    h2 {
+        font-size: 1.2em;
+    }
     header {
         height: 60px;
     }
@@ -526,20 +542,23 @@ div#link-block_footer {
     nav#menu_header {
         position: absolute;
         display: block;
-        width: 250px;
-        height: 100vh;
-        top:0;
+        width: 100%;
+        top:60px;
         right:0;
         margin: 0;
-        padding: 80px 10px;
-        background: #fff;
+        padding: 10px;
+        text-align: center;
+        background: rgba(250, 250, 250, 0.95);
         opacity: 0;
     }
-    div#content {
+    div.main_content {
         top:60px;
     }
     div#hero-banner {
         top: 60px;
+    }
+    footer {
+        top:60px;
     }
 
     /* Toggled State */
@@ -553,6 +572,12 @@ div#link-block_footer {
     }
     div#hero-banner {
         height: 200px;
+    }
+}
+
+@media only screen and (max-width: 512px) {
+    a.menu-link-header {
+        display: block;
     }
 }
 
